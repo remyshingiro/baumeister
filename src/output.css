@@ -7,13 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-blue-800: oklch(42.4% 0.199 265.638);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -168,8 +166,41 @@
   }
 }
 @layer utilities {
+  .ml-40 {
+    margin-left: calc(var(--spacing) * 40);
+  }
+  .ml-60 {
+    margin-left: calc(var(--spacing) * 60);
+  }
+  .ml-90 {
+    margin-left: calc(var(--spacing) * 90);
+  }
+  .ml-110 {
+    margin-left: calc(var(--spacing) * 110);
+  }
   .table {
     display: table;
+  }
+  .h-\[\'\'\] {
+    height: '';
+  }
+  .h-\[\'13\'\] {
+    height: '13';
+  }
+  .h-\[\'134\'\] {
+    height: '134';
+  }
+  .h-\[\'4185\.44px\'\] {
+    height: '4185.44px';
+  }
+  .w-\[\'\'\] {
+    width: '';
+  }
+  .w-\[\'208\'\] {
+    width: '208';
+  }
+  .w-\[\'1514px\'\] {
+    width: '1514px';
   }
   .border-collapse {
     border-collapse: collapse;
@@ -181,26 +212,24 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
-  .text-7xl {
-    font-size: var(--text-7xl);
-    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-100 {
+    padding: calc(var(--spacing) * 100);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .text-amber-300 {
-    color: var(--color-amber-300);
-  }
-  .text-blue-800 {
-    color: var(--color-blue-800);
-  }
-  .text-red-700 {
-    color: var(--color-red-700);
   }
   .underline {
     text-decoration-line: underline;
